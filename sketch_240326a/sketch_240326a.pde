@@ -74,5 +74,9 @@ void draw() {
   for(Net net : netList) {
     net.display();
   }
+  saveFrame("frames/####.tif");
+  if (frameCount >= 900) { // 1800コマアニメーションした時
+    exit();
+  }
   //mass0.setPos(new PVector(width/2 + 50, height/2 + 30));
 }
