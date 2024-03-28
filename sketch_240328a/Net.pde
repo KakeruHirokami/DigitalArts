@@ -9,6 +9,9 @@ class Net {
   }
   
   void update(float dt) {
+    for(Mass mass : massList) {
+      mass.initializeA();
+    }
     for(Elem elem : elemList) {
       elem.update(dt);
     }
