@@ -4,7 +4,7 @@ ArrayList<ArrayList<Elem>> elemListList = new ArrayList<ArrayList<Elem>>();
 ArrayList<Net> netList = new ArrayList<Net>();
 void setup() {
   frameRate(FRAMERATE);
-  size(640, 360);
+  size(360, 640);
   // ボールの初期設定（位置と速度）
   ArrayList<PVector> netPosList = new ArrayList<PVector>();
   ArrayList<PVector> netSpdList = new ArrayList<PVector>();
